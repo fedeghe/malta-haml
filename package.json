@@ -1,0 +1,28 @@
+{
+  "name": "malta-haml",
+  "version": "0.0.1",
+  "description": "Malta plugin to compile haml to html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://fedeghe@github.com/fedeghe/malta-haml.git"
+  },
+  "keywords": [
+    "malta",
+    "malta plugin",
+    "malta haml",
+    "malta haml plugin"
+  ],
+  "author": "Federico Ghedina <federico.ghedina@gmail.com>",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/fedeghe/malta-haml/issues"
+  },
+  "dependencies": {
+    "hamljs": "^0.6.2",
+    "malta": ">=3.0.0"
+  },
+  "main": "index.js"
+}
