@@ -22,7 +22,7 @@
   },
   "dependencies": {
     "hamljs": "^0.6.2",
-    "malta": ">=3.8.3"
+    "malta": ">=3.8.14"
   },
   "main": "index.js"
 }
