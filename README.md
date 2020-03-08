@@ -1,6 +1,5 @@
 ---
 [![npm version](https://badge.fury.io/js/malta-haml.svg)](http://badge.fury.io/js/malta-haml)
-[![Dependencies](https://david-dm.org/fedeghe/malta-haml.svg)](https://david-dm.org/fedeghe/malta-haml)
 [![npm downloads](https://img.shields.io/npm/dt/malta-haml.svg)](https://npmjs.org/package/malta-haml)
 [![npm downloads](https://img.shields.io/npm/dm/malta-haml.svg)](https://npmjs.org/package/malta-haml)  
 ---  

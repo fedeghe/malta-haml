@@ -1,20 +1,18 @@
-require('malta').checkDeps('hamljs');
-
-var haml = require("hamljs"),
+const haml = require("hamljs"),
 	path = require('path'),
 	fs = require('fs');
 
 function malta_haml(o, options) {
 
-	var self = this,
-		name = o.name,
+	const self = this,
 		start = new Date(),
-		msg,
         pluginName = path.basename(path.dirname(__filename)),
         dataFilename = path.dirname(self.tplPath) + '/' + options.dataFile,
         hasData = 'dataFile' in options && fs.existsSync(dataFilename),
-        data = {},
 		oldname = o.name;
+        
+	let	msg,
+        data = {};
 
 	try {
 		if (hasData){
@@ -31,7 +29,7 @@ function malta_haml(o, options) {
 	return function (solve, reject){
         try {
             o.content = haml.render(o.content+'', {locals : data});
-            fs.writeFile(o.name, o.content, function(err) {	
+            fs.writeFile(o.name, o.content, err => {	
                 err && self.doErr(err, o, pluginName);
                 msg = 'plugin ' + pluginName.white() + ' wrote ' + o.name + ' (' + self.getSize(o.name) + ')';
                 fs.unlink(oldname, () => {});

@@ -21,8 +21,7 @@
         "url": "https://github.com/fedeghe/malta-haml/issues"
     },
     "dependencies": {
-        "hamljs": "^0.6.2",
-        "malta": "^4.0.4"
+        "hamljs": "^0.6.2"
     },
     "main": "index.js"
 }
